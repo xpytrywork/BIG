@@ -12,6 +12,4 @@ else
   echo "var string = \"Hello World\"\nalert(string)" > js/main.js
   echo 'success'
   exit
-  echo 'success'
-  exit
 fi
