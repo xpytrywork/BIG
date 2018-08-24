@@ -8,22 +8,14 @@
     <script src="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js">
     </script>
     <link rel="stylesheet" href="简历.css">
-    <style type="text/css">
-        .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
-        }
-    </style>
 </head>
 <body>
     <div class="top_nav_bar">
         <div class="top_barrier clearfix">
-        <a class="logo" href="#" alt="logo">
-            <span class="Rs">
+            <a class="logo" href="#" alt="logo">
+                <span class="Rs">
                 Rs
-            </span>
+                </span>
             <span class="Card">
                 Card
             </span>
@@ -45,15 +37,15 @@
         <div class="mask"></div>
     </div>
     <main>
-            <div class="user_card clearfix">
-                <div class="pictureAndtext">
-                    <div class="picture">
-                        <img src="img/2.jpg" alt="头像" height="342px;">
-                    </div>
-                    <div class="text">
-                        <span class="welcome">Hello
-                            <span class="triangle"></span>
-                        </span>
+        <div class="user_card clearfix">
+            <div class="pictureAndtext">
+                <div class="picture">
+                    <img src="img/2.jpg" alt="头像" height="342px;">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                    <span class="triangle"></span>
+                    </span>
                         <h1>谢佩余</h1>
                         <p>前端工程师</p>
                         <hr>
@@ -69,8 +61,8 @@
                         </dl>
                     </div>
                     </div>
-                    </div>
-                <footer class="media">
+                </div> 
+            <footer class="media">
                         <a href="#">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-github"></use>
@@ -86,38 +78,101 @@
                                     <use xlink:href="#icon-weibo"></use>
                                 </svg>
                               </a>
-                </footer>
-            </div>
-            <a class="button" href="#">下载 PDF 简历</a>
-            <p>
-                方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。<br>
+             </footer>       
+        <p class="button_wrapper">
+            <a class="button" href="1.jpg" target="_blank">下载 PDF 简历</a>
+        </p>
+            <p class="self_introduction">
+                谢佩余，前端工程师<br>
                 技能：前端开发，Rails 开发，Node.js 开发
             </p>
     </main>
-    <section>
+    <section class="Professional_Skills">
             <h2>技能</h2>
-            <ol>
-              <li>HTML 5 &amp; CSS 3</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Vue</li>
-              <li>React</li>
-              <li>HTTP</li>
+            <ol class="Professional_ol clearfix">
+              <li>HTML 5 &amp; CSS 3
+                  <div class="skills_bar">
+                      <div class="skills_bar_inside">
+
+                      </div>
+                  </div>
+              </li>
+              <li class="li_second">JavaScript
+                <div class="skills_bar">
+                    <div class="skills_bar_inside">
+                      
+                    </div>
+                </div>
+              </li>
+              <li>jQuery
+                <div class="skills_bar">
+                    <div class="skills_bar_inside">
+                      
+                    </div>
+                </div>
+              </li>
+              <li>Vue
+                <div class="skills_bar">
+                    <div class="skills_bar_inside">
+                      
+                    </div>
+                </div>
+              </li>
+              <li>React
+                <div class="skills_bar">
+                    <div class="skills_bar_inside">
+                      
+                    </div>
+                </div>
+              </li>
+              <li>HTTP
+                <div class="skills_bar">
+                    <div class="skills_bar_inside">
+                      
+                    </div>
+                </div>
+              </li>
             </ol>
     </section>
-    <section>
+    <section class="portfolio">
             <h2>作品集</h2>
             <nav>
-              <ol> 
-                <li>所有</li>
-                <li>框架</li>
-                <li>原生JS&amp;CSS</li>
+              <ol class="clearfix"> 
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生JS&amp;CSS</li>
               </ol>
+              <div  class="bar">
+                  <div id="portfolio_bar" class="bar_inside_1">
+
+                  </div>
+              </div>
             </nav>
-            <div class="jobs">
-              <div class="big"></div>
-              <div class="small"></div>
-              <div class="small"></div>
+            <script>
+               portfolio1.onclick=function()
+               {
+                portfolio_bar.className='bar_inside_1';
+               }
+               portfolio2.onclick=function()
+               {
+                portfolio_bar.className='bar_inside_2';
+               }
+               portfolio3.onclick=function()
+               {
+                portfolio_bar.className='bar_inside_3';
+               }
+
+            </script>
+            <div class="works">
+              <div class="big">
+                  <img src="img/3.jpg" alt="作品">
+              </div>
+              <div class="small">
+                    <img src="img/4.jpg" alt="作品">
+              </div>
+              <div class="small2">
+                    <img src="img/5.jpg" alt="作品">
+              </div>
             </div>
       </section>
 </body>
