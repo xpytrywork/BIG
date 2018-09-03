@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background:gray url(1-max.jpg) no-repeat center center;
+}
+.wrapper{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+kbd{
+    border: 1px solid red;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 4em;
+    height: 4em;
+}
+main div:nth-child(2){
+    margin-left: 2em;
+}
+main div:nth-child(3){
+   margin-left: 13px;
+}
+.wrapper{
+    display: inline-block;
+}
+kbd{
+    position: relative;
+}
+button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+kbd:hover>button{
+    font-family:'Microsoft YaHei';
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid gray;
+}
+.key{
+    width: 50px;
+    height:40px;
+    border:1px solid #373737;
+    border-radius: 6px;
+    color: #c5c5c5;
+    box-shadow: 0 0 0 1px #1A1B1C,0 0 0 2px #1F2020,0 3px 0 2px #080808;
+    background: #111;
+    display: relative;
+    font-family: Arial Rounded MT bold;
+}
+.row{
+     margin: 20px;
+}
+.row .key{
+    margin: 0 8px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+}
+kbd span{
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+kbd img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
