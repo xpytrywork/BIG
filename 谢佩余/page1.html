@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page1</title>
+    <link href="page1.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript">
+        function tab(pid){
+         var ps = ['news','sports','military','bbs'];
+         for(var i=0,len=ps.length;i<len;i++)
+         {
+          if(ps[i] == pid){
+           document.getElementById(ps[i]).style.display = "block";
+          }
+          else
+          {
+           document.getElementById(ps[i]).style.display = "none";
+          }
+         }
+        }
+        </script>
+
+</head>
+<body>
+    <div class="banner">
+      <a href="#"><img src="img/banner-Home.png"></a>
+    </div>
+    <div class="tab">
+          <ul class="clearfix">
+              <li class="li" id="li_first" onmouseover="tab('news');">热门</li>
+              <li class="li" id="li_second" onmouseover="tab('sports');">活动</li>
+              <li class="li" id="li_third" onmouseover="tab('military');">最新</li>
+              <li class="li" id="li_fourth" onmouseover="tab('bbs');">急速借</li>
+          </ul>
+    </div>
+    <div class="main_item_1" id="news">
+            <ul>
+                <li class="li_1">
+                    <img src="img/1.png">
+                    <span class="span1">蚂蚁金宝</span>
+                    <span class="span2">1000-5000</span>
+                    <span class="span3">芝麻分600以上超…  80937人借款</span>
+                    <span class="span4">下款快</span>
+                    <span class="span5">门槛低</span>
+                    <a class="a1">去申请</a>
+                </li>
+                <li class="li_2">
+                        <img src="img/2.png">
+                        <span class="span1">闪电虎</span>
+                        <span class="span2">1000-5000</span>
+                        <span class="span3">芝麻分600以上超…  80937人借款</span>
+                        <span class="span4">下款快</span>
+                        <span class="span5">门槛低</span>
+                        <a class="a1">去申请</a>
+                    </li>
+                <li class="li_3">
+                        <img src="img/3.png">
+                        <span class="span1">花赢宝</span>
+                        <span class="span2">1000-5000</span>
+                        <span class="span3">芝麻分600以上超…  80937人借款</span>
+                        <span class="span4">下款快</span>
+                        <span class="span5">门槛低</span>
+                        <a class="a1">去申请</a>
+                </li>
+                <li class="li_4">
+                        <img src="img/4.png">
+                        <span class="span1">花赢宝</span>
+                        <span class="span2">1000-5000</span>
+                        <span class="span3">芝麻分600以上超…  80937人借款</span>
+                        <span class="span4">下款快</span>
+                        <span class="span5">门槛低</span>
+                        <a class="a1">去申请</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_item_2" id="sports">
+            example
+        </div>
+        <div class="main_item_3" id="military">
+            example
+            <br>
+            000000
+        </div>
+        <div class="main_item_4" id="bbs">
+            example
+            <br>
+            11111
+        </div>
+</body>
+</html>
