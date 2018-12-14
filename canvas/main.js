@@ -1,10 +1,6 @@
 var canvas = document.getElementById('xxx');
 var context = canvas.getContext('2d');
 var lineWidth=5
-doucement.body.ontouchstart=function(eee)
-{
-  eee.preventDefault()
-}
 autoSetCanvasSize(canvas)
 
 listenToUser(canvas)
